@@ -6,6 +6,11 @@ div {
   color: #fff;
 }
 
+p {
+  font-size: 1.1em;
+  font-weight: 300;
+}
+
 .title {
   display: grid;
   grid-template-rows: 1fr 1fr;
@@ -17,39 +22,50 @@ div {
 }
 
 .last {
-  font-size: 200px;
+  font-size: 15vmin;
   display: inline-block;
   box-sizing: border-box;
   vertical-align: top;
-  margin-bottom: -50px;
+  margin-bottom: -4vmin;
 }
 
 .first {
   display: flex;
   justify-content: center;
-  font-size: 70px;
+  font-size: 5vmin;
   font-weight: 300;
 }
 
 .top-navi {
   position: absolute;
   top: 7%;
-  right: 7%;
+  right: 5%;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   column-gap: 5%;
 }
 
 .menu {
-  width: 200px;
+  width: 12vh;
 }
 
 .menu-title {
-  font-size: 24px;
+  font-size: 1.5em;
   border-bottom: 1px solid white;
+  margin-bottom: -1vh;
 }
 
-.menu-title ::after {
-  border-color: white;
-  color: #fff;
+@media screen and (max-width: 1000px) {
+  .top-navi {
+    right: 10%;
+  }
+
+  p {
+    font-size: 0.8em;
+    font-weight: 300;
+  }
+
+  .menu-title {
+    font-size: 1em;
+  }
 }

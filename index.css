@@ -1,0 +1,55 @@
+body {
+  background-color: #1e1e1e;
+}
+
+div {
+  color: #fff;
+}
+
+.title {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  width: min-content;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.last {
+  font-size: 200px;
+  display: inline-block;
+  box-sizing: border-box;
+  vertical-align: top;
+  margin-bottom: -50px;
+}
+
+.first {
+  display: flex;
+  justify-content: center;
+  font-size: 70px;
+  font-weight: 300;
+}
+
+.top-navi {
+  position: absolute;
+  top: 7%;
+  right: 7%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 5%;
+}
+
+.menu {
+  width: 200px;
+}
+
+.menu-title {
+  font-size: 24px;
+  border-bottom: 1px solid white;
+}
+
+.menu-title ::after {
+  border-color: white;
+  color: #fff;
+}
